@@ -20,7 +20,7 @@ const [userLang, setUserLang] = useState("java");
 const [userTheme, setUserTheme] = useState("vs-dark");
 
 // State variable to set editors default font size
-const [fontSize, setFontSize] = useState(20);
+const [fontSize, setFontSize] = useState(17);
 
 const [fontSizef, setFontSizef] = useState(10);
 
