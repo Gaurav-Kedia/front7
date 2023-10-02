@@ -40,8 +40,8 @@ const options = {
 
 // Function to call the compile endpoint
 function compile() {
-	setUserOutput("making requests to APIs");
-	setLoading(true);
+	setUserOutput("Loading \nRequesting APIs . . . . ");
+	setLoading(false);
 	if (userCode === ``) {
 	return
 	}
@@ -90,8 +90,8 @@ return (
 			<select class="language-select btn"
 					name="language" 
 					id="language">
-				<option value="cpp">C++</option>
 				<option value="java">Java</option>
+				<option value="cpp">C++</option>
 				<option value="python">Python</option>
 			</select>
 			

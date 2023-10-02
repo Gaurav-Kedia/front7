@@ -161,6 +161,7 @@
 .output-box {
   height: 277px;  
   background-color: #D9D9D9;
+  box-shadow: 0px 4px 4px 0px #00000040;
   border-radius:13px ;
   position : relative;
 } 
@@ -184,7 +185,8 @@
     padding: 10px;
     font-family: Poppins;
     font-size: 13px;
-    color: #00A925;
+    /* color: #00A925; */
+    color: #000000;
     border: 1px solid #B3B3B3; 
     border-top-width: 0;
     border-radius: 0 0 13px 13px;

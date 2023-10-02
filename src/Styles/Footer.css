@@ -36,12 +36,12 @@
 
 .bar {
   color: #626381; 
-  line-height: 1;
+  line-height: 2;
 }
 
 .footer-links .Link {
   font-family: Poppins;
-  font-size: 22px;
+  font-size: 17px;
   font-weight: 400;
   line-height: 33px;
   letter-spacing: 0.04em;
