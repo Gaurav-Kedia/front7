@@ -6,6 +6,7 @@ import Editor from "@monaco-editor/react";
 import Navbar from './Components/Navbar';
 import Axios from 'axios';
 import Footer from './Components/Footer';
+import {useRef} from 'react';
 //import spinner from './spinner.svg';
 
 function App() {
@@ -38,13 +39,16 @@ const options = {
 	fontSize: fontSize
 }
 
+const ref = useRef(null);
+
 // Function to call the compile endpoint
 function compile() {
-	setUserOutput("Loading \nRequesting APIs . . . . ");
-	setLoading(false);
 	if (userCode === ``) {
-	return
-	}
+		return
+		}
+	ref.current?.scrollIntoView({behavior: 'smooth'});
+	setUserOutput("Loading \nRequesting to APIs . . . .");
+	setLoading(false);
 
   var code = userCode;
   var input = userInput;
@@ -126,7 +130,7 @@ return (
 			<div className="spinner-box">
 			</div>
 		) : (
-			<div className="output-box"> 
+			<div ref={ref} className="output-box"> 
 			<div className='title'>Output</div>
 			<pre>{userOutput}</pre>
 			{/* <button onClick={() => { clearOutput() }}
