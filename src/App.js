@@ -141,7 +141,7 @@ return (
 		)}
         <div className='extra'> 
 			<ul>
-				<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</li>
+				<li>We are proud to announce that we are registered under the Udyam Registration scheme, implemented by the Government of India.</li>
 				<li>tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minimli</li>
 				<li>veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
 			</ul>
